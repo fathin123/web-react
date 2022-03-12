@@ -10,6 +10,7 @@ import List from './component/List';
 import Test from './component/Test';
 import Login from './login/Login';
 import BlogPost from './container/BlogPost/BlogPost';
+import Mahasiswa from './container/Mahasiswa/Mahasiswa';
 
 // Default
 // ReactDOM.render(
@@ -61,7 +62,10 @@ import BlogPost from './container/BlogPost/BlogPost';
 // ReactDOM.render(<Login/>, document.getElementById('root'));
 
 // Pertemuan 4
-ReactDOM.render(<BlogPost/>, document.getElementById('content'));
+// ReactDOM.render(<BlogPost/>, document.getElementById('content'));
+
+// Tugas 4
+ReactDOM.render(<Mahasiswa/>, document.getElementById('content'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

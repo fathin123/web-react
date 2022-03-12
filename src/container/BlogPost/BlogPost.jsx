@@ -28,10 +28,10 @@ class BlogPost extends Component{
     }
 
     handleHapusArtikel = (data) => {
-        fetch('http://localhost:3001/posts/${data}', {method: 'DELETE'})
-        .then(res => {
-            this.ambilDataDariServerApi()
-        })
+        fetch(`http://localhost:3001/posts/${data}`,{method: 'DELETE'})                                                                                         // Alamar URL API yang ingin kita HAPUS datanya
+            .then(res => {                                                                                                                                      // Ketika proses hapus berhasil, maka ambil data dari server API lokal
+                this.ambilDataDariServerAPI()
+            })
     }
 
     handleTambahArtikel = (event) => {
